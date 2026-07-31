@@ -31,6 +31,13 @@ class CryptoService {
     remotePublicKey: remotePublicKey,
   );
 
+  //
+  // Future<SecretKey> decrypt({
+  // required List<int> plaintext,
+  // required SecretKey secretKey,
+  // required List<int> associatedData,
+// }) => _aesGcm.encrypt(plainText, secretKey: secretKey, add: associatedData);
+
   Future<SecretBox> encrypt({
     required List<int> plaintext,
     required SecretKey secretKey,
